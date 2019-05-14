@@ -15,5 +15,18 @@ new Vue({
     loading1: false,
     loading2: true,
     loading3: false
+  },
+  created() {
+    setTimeout(() => {
+      // 触发 input 的 change 事件
+      let event = new Event('change')
+      let inputElement = this.$el.querySelector('input')
+      inputElement.dispatchEvent(event)
+    }, 3000)
+  },
+  methods: {
+    inputChange(e) {
+      console.log(e)
+    }
   }
 })
