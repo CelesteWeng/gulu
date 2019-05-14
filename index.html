@@ -32,14 +32,19 @@
 </head>
 <body>
 <div id="app">
+  <div class="box">
+    <g-input value="王" v-model="message"></g-input>
+    <p>{{ message }}</p>
+    <button @click="message+=1">+1</button>
+  </div>
 <!--  <div class="box">-->
 <!--    <g-input value="小黄鸭" disabled></g-input>-->
 <!--    <g-input value="黑天鹅" readonly></g-input>-->
 <!--    <g-input value="绿毛龟"></g-input>-->
 <!--  </div>-->
-  <div class="box">
-    <g-input value="皮卡丘" @change="inputChange"></g-input>
-  </div>
+<!--  <div class="box">-->
+<!--    <g-input value="皮卡丘" @change="inputChange"></g-input>-->
+<!--  </div>-->
 <!--  <div class="box">-->
 <!--    <g-input value="秃狗" error="请先植发"></g-input>-->
 <!--  </div>-->
